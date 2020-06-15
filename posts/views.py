@@ -15,3 +15,7 @@ def detail(request, slug):
     post = get_object_or_404(Post, slug=slug)
     context = {'post': post}
     return render(request, 'posts/detail.html', context)
+
+def over_ons(request):
+    context = {}
+    return render(request, 'posts/over_ons.html', context)
