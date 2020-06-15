@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	Voor rede vatbaar
+{% endblock %}
+
+{% block content %}
+	{% if posts %}
+		{% for post in posts %}
+			{% include "posts/_post_leader.html" with post=post %}
+		{% endfor %}
+	{% endif %}
+{% endblock %}
+
+
+
