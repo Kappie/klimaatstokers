@@ -17,7 +17,9 @@
 		<img src="{{ post.leader_image.url }}" alt="" class="img-fluid pt-3 pb-5" />
 
 
-		<div class="post-body">{{ post.to_html|safe }}</div>
+{% autoescape off %}
+		<div class="post-body">{{ post.to_html }}</div>
+{% endautoescape %}
 
 	</div>
 

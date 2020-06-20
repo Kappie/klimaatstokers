@@ -7,13 +7,24 @@ $font-family-base: "Inter";
 
 @import './bootstrap-4.4.1/bootstrap';
 
+body {
+
+}
+
 .post-body {
 	font-size: 1.1rem;
+
+	blockquote {
+		padding-left: $spacer;
+		border-left: 6px solid $gray-200;
+		color: $gray-600;
+	}
 }
 
 .site-header-text {
 	font-size: 2rem;
 }
+
 
 
 
